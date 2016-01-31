@@ -46,7 +46,7 @@ h2 {
   }
 }
 #container {
-  width: 592px;
+  width: 632px;
   height: 872px;
   margin: 40px auto;
   padding: 44px;
@@ -65,7 +65,7 @@ h2 {
 #container .page .right {
   float: left;
   /*padding-left: @left_width;*/
-  width: 222px;
+  width: 262px;
   zoom: 1;
   overflow: hidden;
 }

@@ -187,6 +187,10 @@ h2 {
   top: 0;
   left: 0;
 }
+#container .page .left .des .sk-item span,
+#container .page .right .des .sk-item span {
+  margin: 0 1em;
+}
 #container .page .left .contact_me,
 #container .page .right .contact_me {
   margin-top: 30px;

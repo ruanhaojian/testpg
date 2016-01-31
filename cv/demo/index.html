@@ -15,6 +15,28 @@
   <script src="js/typed.js" type="text/javascript"></script>
   <script src="js/echarts/echarts.js"></script>
   <script src="js/index.js"></script>
+
+  <script type="text/javascript">
+
+  var count = 8;
+
+  $(function(){
+
+
+
+      for (var i = 1; i <= count; i++) {
+        $('#typed-strings'+i).hide();
+        $('.typed-pre-show'+i).hide();
+        $('.typed-pre-show'+i).css({"opacity":"0"});
+      };
+
+      typed(1);
+
+      //setChart()
+  });
+
+
+  </script>
 </head>
 <body>
   <header>
@@ -43,7 +65,13 @@
           <i class="iconfont circledown typed-pre-show2">&#xe632;</i>
           <h2 class="typed-pre-show2">关于我 ABOUT ME</h2>
           <div id="typed-strings2">
-            <p>负责民情纠纷系统、信访举报系统等几个管理类系统的一个开发工作;其中涉及客户沟通确认需求、数据库设计、框架选型和开发文档的编写</p>
+            <p>
+              总是对开发网络应用程序的热情，以展示创新设计;<br>
+              热爱前端设计，实现友好的用户体验;<br>
+              偶尔熬夜研究代码，追求优美的代码风格;<br>
+              喜欢新事物，紧跟大前端发展步伐;<br>
+              玩过后台、Android、ios;
+            </p>
           </div>
           <span id="typed2"></span>
         </article>
@@ -59,12 +87,22 @@
               </div>
             </div>
             <div id="typed-strings3">
-              <p class="exp-date">2013年10月-2014年10月<br>
-                <span class="exp-title">广东丰德科技有限公司 软件工程师</span><br>负责民情纠纷系统、信访举报系统等几个管理类系统的一个开发工作;其中涉及客户沟通确认需求、数据库设计、框架选型和开发文档的编写。
+              <p class="exp-date">
+                2014年11月-至今<br>
+                <span class="exp-title">
+                  广州三之乐科技有限公司 web前端开发工程师
+                </span>
+                <br>
+                负责公司web前端各大开发任务;主要参与开发：<br>
+                长安基金交易平台前端：https://trade.changanfunds.com/etrading/<br>
+                红包转盘活动：html5+css3+zepto实现转盘与红包分享等交互<br>
+                广发H5宣传页：html5+css3动画实现翻页动画播放宣传效果<br>
+                长安基金微理财：实现pc网上交易的大部分功能。<br>
               </p>
             </div>
-            <span id="typed3" style="line-height:1em"></span>
-            
+            <span id="typed3"></span>
+            <div >
+              <img src="img/qr_code.jpg" class="typed-pre-show4" style="width:100px"></div>
           </section>
           <section class="sec-flow">
             <div class="flow-state typed-pre-show4">
@@ -75,60 +113,126 @@
             </div>
 
             <div id="typed-strings4">
-              <p class="exp-date">2014年11月-至今<br>
-                <span class="exp-title">广州三之乐科技有限公司 web前端开发工程师</span><br>
-                负责公司web前端各大开发任务;主要参与开发：<br>
-                督办系统：<br>
-                长安基金交易平台前端：<br>
-                长安基金微网站：<br>
+              <p class="exp-date">2013年10月-2014年10月<br>
+                <span class="exp-title">广东丰德科技有限公司 软件工程师</span><br>负责民情纠纷系统、信访举报系统等几个管理类系统的一个开发工作;其中涉及客户沟通确认需求、数据库设计、框架选型和开发文档的编写。
               </p>
+              
             </div>
             <span id="typed4" style="line-height:1em"></span>
 
           </section>
         </article>
 
-        <article class="des contact_me">
-          <i class="iconfont circledown">&#xe615;</i>
-          <h2 class="pd-btm2">兴趣爱好 INTERST</h2>
-          <p class="icon-row"><i class="iconfont location">&#xe60b;</i>羽球/音乐/移动互联</p>
-        </article>
+        <div id="typed-strings5">
+          <p >
+          </p>
+
+        </div>
+        <span id="typed5" ></span>
+
+        <!-- <article class="des contact_me" style="">
+          <i class="iconfont circledown typed-pre-show5">&#xe615;</i>
+          <h2 class="pd-btm2 typed-pre-show5">兴趣爱好 INTERST</h2>
+
+          <div id="typed-strings5">
+            <p >
+              移动互联/前端交互/羽球/音乐
+            </p>
+            
+          </div>
+          <span id="typed5" style="line-height:1em"></span>
+
+        </article> -->
         
 
 
       </section>
       <section class="right">
-        <article class="des contact_me">
-          <i class="iconfont circledown">&#xe615;</i>
-          <h2 class="pd-btm2">联系我 ABOUT ME</h2>
-          <p class="icon-row"><i class="iconfont location">&#xe60e;</i>工作地点：xxx</p>
+        <article class="des contact_me typed-pre-show6">
+          
+          <i class="iconfont circledown ">&#xe615;</i>
+          <h2 class="pd-btm2">联系我 CONTACT ME</h2>
+          
+
+          <p class="icon-row"><i class="iconfont location">&#xe60e;</i>工作地点：广州、深圳</p>
           <p class="icon-row"><i class="iconfont location">&#xe60f;</i>电话号码：1591-5746-874</p>
-          <p class="icon-row"><i class="iconfont location">&#xe623;</i>邮箱：610708075@qq.com</p>
+          <p class="icon-row"><i class="iconfont location">&#xe623;</i>邮箱：15915746874@163.com</p>
         </article>
 
-        <article class="des experience">
+        <article class="des experience typed-pre-show6">
           <i class="iconfont circledown">&#xe61e;</i>
           <h2>技能 SKILLS</h2>
-          <p>技能</p>
+
+          <div id="typed-strings6">
+            <p >
+              <span>jQuery</span>
+              <span>JavaScript</span>
+              <span>HTML 5</span> 
+              <span>AngularJS</span>
+              <span>Bootstrap</span>
+              <span>Less</span>
+              <span>Sass</span>
+              <span>AJAX</span>
+              <span>CSS</span>
+              <span>Java</span>
+              <span>ObjectC</span>
+              <span>React.js</span>
+              <span>fis</span>
+              <span>C#</span>
+              <span>SVN</span>
+              <span>Git</span>
+              <span>Sublime</span>
+              <span>WebStorm</span>
+              <span>Requirement Analysis</span>
+              <span>User-centered Design</span>
+            </p>
+            
+          </div>
+          <span id="typed6" class="sk-item"></span>
+
         </article>
 
-        <article class="des experience">
+        <article class="des experience typed-pre-show7">
           <i class="iconfont circledown">&#xe637;</i>
           <h2>教育背景 EDUCATION</h2>
-          <p class="exp-date">2010-2014</p>
-          <p class="exp-title">广东药科大学 <br>计算机科学与技术(本科)</p>
-          <p >面向对象程序设计、计算机网络、数据结构与算法、编译原理、
-C语言程序设计Ⅰ&Ⅱ、数据库原理与应用、网络组建与管理等
-</p>
+
+          <div id="typed-strings7">
+            <p >
+              <span class="exp-date">2010-2014</span>
+              <br>
+              <span class="exp-title">广东药科大学 </span>
+              <br>
+              计算机科学与技术(本科)
+              <br>
+              <span >
+                面向对象程序设计、计算机网络、数据结构与算法、编译原理、
+              C语言程序设计Ⅰ&Ⅱ、数据库原理与应用、网络组建与管理等
+              </span>
+              <br>
+            </p>
+            
+          </div>
+          <span id="typed7" ></span>
+
+          
         </article>
 
-        <article class="des experience">
+        <article class="des experience typed-pre-show8">
           <i class="iconfont circledown">&#xe63a;</i>
           <h2>优势特长 EXPERTISE</h2>
           <section id="chart" style="height:200px">
 
 
           </section>
+
+          <div id="typed-strings8">
+            <p >
+
+            </p>
+            
+          </div>
+          <span id="typed8" ></span>
+
         </article>
       </section>
     </section>
@@ -137,48 +241,6 @@ C语言程序设计Ⅰ&Ⅱ、数据库原理与应用、网络组建与管理等
   <footer>
 
   </footer>
-  <script type="text/javascript">
-
-  var count = 4
-
-  $(function(){
-
-
-
-      for (var i = 1; i <= count; i++) {
-        $('#typed-strings'+i).hide();
-        //$('.typed-pre-show'+i).hide();
-        $('.typed-pre-show'+i).css({"opacity":"0"});
-      };
-
-      typed(1);
-    });
-
-  function typed(i){
-
-    //$('.typed-pre-show'+i).show();
-    $('.typed-pre-show'+i).addClass('animated');
-    $('.typed-pre-show'+i).addClass('fadeIn');
-
-    $("#typed"+i).typed({
-      stringsElement: $('#typed-strings'+i),
-      typeSpeed: 0,
-      startDelay: 1000,
-      loop:false,
-      showCursor: false,
-      callback: function() {
-
-        if(i<=count){
-          
-          typed(++i);
-        }
-        
-      }
-  });
-
-  }
-
-
-  </script>
+  
 </body>
 </html>

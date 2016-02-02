@@ -24,25 +24,73 @@
 
 
 
-      for (var i = 1; i <= count; i++) {
-        $('#typed-strings'+i).hide();
-        $('.typed-pre-show'+i).hide();
-        $('.typed-pre-show'+i).css({"opacity":"0"});
-      };
+      // for (var i = 1; i <= count; i++) {
+      //   $('#typed-strings'+i).hide();
+      //   $('.typed-pre-show'+i).hide();
+      //   $('.typed-pre-show'+i).css({"opacity":"0"});
+      // };
 
-      typed(1);
+      // typed(1);
 
-      //setChart()
+      $('.container').hide();
+      $('.container').css({"opacity":0});
+
+      $("#typed").typed({
+        stringsElement: $('#typed-strings'),
+        typeSpeed: 100,
+        startDelay: 0,
+        loop:false,
+        showCursor: false,
+        callback: function() {
+
+          $('.loading-area').hide();
+          
+
+          $('.container').show();
+          $('.container').addClass('animated');
+          $('.container').addClass('fadeIn');
+          setChart()
+
+          window.onscroll = function () {
+            setImgState('imgArea1');
+            setImgState('imgArea2');
+            setImgState('imgArea3');
+            setImgState('imgArea4');
+        };
+
+        
+
+        window.onload = function () {
+            window.onscroll();
+        };
+        }
+      });
+
+
+      
   });
 
 
   </script>
 </head>
 <body>
+
+  <div class="loading-area">
+
+    <div id="typed-strings">
+      <p >
+        welcome come to ruanhaojian's cv.
+      </p>
+    </div>
+    <span id="typed"></span>
+
+  </div>
+  
+
   <header>
 
   </header>
-  <section id="container">
+  <section class="container">
     <section class="page">
       <section class="left">
         <div class="zoom">
@@ -65,12 +113,12 @@
           <i class="iconfont circledown typed-pre-show2">&#xe632;</i>
           <h2 class="typed-pre-show2">关于我 ABOUT ME</h2>
           <div id="typed-strings2">
-            <p>
+            <p class="tx-indent">
               总是对开发网络应用程序的热情，以展示创新设计;<br>
               热爱前端设计，实现友好的用户体验;<br>
               偶尔熬夜研究代码，追求优美的代码风格;<br>
               喜欢新事物，紧跟大前端发展步伐;<br>
-              玩过后台、Android、ios;
+              熟悉前端模块化，玩过后台、Android、ios;
             </p>
           </div>
           <span id="typed2"></span>
@@ -87,18 +135,24 @@
               </div>
             </div>
             <div id="typed-strings3">
-              <p class="exp-date">
+              <div class="exp-date">
                 2014年11月-至今<br>
                 <span class="exp-title">
                   广州三之乐科技有限公司 web前端开发工程师
                 </span>
                 <br>
-                负责公司web前端各大开发任务;主要参与开发：<br>
-                长安基金交易平台前端：https://trade.changanfunds.com/etrading/<br>
-                红包转盘活动：html5+css3+zepto实现转盘与红包分享等交互<br>
-                广发H5宣传页：html5+css3动画实现翻页动画播放宣传效果<br>
-                长安基金微理财：实现pc网上交易的大部分功能。<br>
-              </p>
+                <p class="tx-indent">负责公司web前端各大开发任务;主要参与开发：</p>
+                <p class="tx-indent">长安基金交易平台前端：</p>
+                前端样式布局技术提供；<a href="https://trade.changanfunds.com/etrading/" target="_blank">-->>戳我</a><br>
+
+                <p class="tx-indent">红包转盘活动：</p>
+                html5+css3+zepto实现转盘与红包分享等交互；<br>
+                <p class="tx-indent">广发H5宣传页：</p>
+                html5+css3动画实现翻页动画播放宣传效果；<br>
+                <p class="tx-indent">长安基金微理财：</p>
+                实现pc网上交易的大部分功能；<br>
+
+              </div>
             </div>
             <span id="typed3"></span>
             <div >
@@ -114,7 +168,9 @@
 
             <div id="typed-strings4">
               <p class="exp-date">2013年10月-2014年10月<br>
-                <span class="exp-title">广东丰德科技有限公司 软件工程师</span><br>负责民情纠纷系统、信访举报系统等几个管理类系统的一个开发工作;其中涉及客户沟通确认需求、数据库设计、框架选型和开发文档的编写。
+                <span class="exp-title">广东丰德科技有限公司 软件工程师</span><br>负责民情纠纷系统、信访举报系统等几个管理类系统的一个开发工作;其中涉及客户沟通确认需求、数据库设计、框架选型和开发文档的编写。<br>
+                使用：C#、MSSQL、Asp.net MVC；
+
               </p>
               
             </div>
@@ -159,39 +215,6 @@
           <p class="icon-row"><i class="iconfont location">&#xe623;</i>邮箱：15915746874@163.com</p>
         </article>
 
-        <article class="des experience typed-pre-show6">
-          <i class="iconfont circledown">&#xe61e;</i>
-          <h2>技能 SKILLS</h2>
-
-          <div id="typed-strings6">
-            <p >
-              <span>jQuery</span>
-              <span>JavaScript</span>
-              <span>HTML 5</span> 
-              <span>AngularJS</span>
-              <span>Bootstrap</span>
-              <span>Less</span>
-              <span>Sass</span>
-              <span>AJAX</span>
-              <span>CSS</span>
-              <span>Java</span>
-              <span>ObjectC</span>
-              <span>React.js</span>
-              <span>fis</span>
-              <span>C#</span>
-              <span>SVN</span>
-              <span>Git</span>
-              <span>Sublime</span>
-              <span>WebStorm</span>
-              <span>Requirement Analysis</span>
-              <span>User-centered Design</span>
-            </p>
-            
-          </div>
-          <span id="typed6" class="sk-item"></span>
-
-        </article>
-
         <article class="des experience typed-pre-show7">
           <i class="iconfont circledown">&#xe637;</i>
           <h2>教育背景 EDUCATION</h2>
@@ -205,8 +228,7 @@
               计算机科学与技术(本科)
               <br>
               <span >
-                面向对象程序设计、计算机网络、数据结构与算法、编译原理、
-              C语言程序设计Ⅰ&Ⅱ、数据库原理与应用、网络组建与管理等
+                主修：C、java、数据结构与算法、编译原理;
               </span>
               <br>
             </p>
@@ -216,6 +238,45 @@
 
           
         </article>
+
+        <article class="des experience typed-pre-show6">
+          <i class="iconfont circledown">&#xe61e;</i>
+          <h2>技能 SKILLS</h2>
+
+          <div id="typed-strings6">
+            <p  class="sk-item">
+              语言：<br>
+              <span>JavaScript</span>
+              <span>HTML 5</span> 
+              <span>Less</span>
+              <span>Sass</span>
+              <span>CSS</span>
+              <span>Java</span>
+              <span>ObjectC</span>
+              <span>C#</span>
+              <br>
+              框架：<br>
+              <span>Bootstrap</span>
+              <span>jQuery</span>
+              <span>AngularJS</span>
+              <span>ReactJS</span>
+              <br>
+              工具：<br>
+              <span>fis</span>
+              <span>SVN</span>
+              <span>Git</span>
+              <span>Sublime</span>
+              <span>WebStorm</span>
+              <span>eclipse</span>
+              <span>xcode</span>
+            </p>
+            
+          </div>
+          <span id="typed6" class="sk-item"></span>
+
+        </article>
+
+        
 
         <article class="des experience typed-pre-show8">
           <i class="iconfont circledown">&#xe63a;</i>
@@ -238,6 +299,134 @@
     </section>
     
   </section>
+
+  <section class="container">
+    <section class="page page-direct">
+      <section class="left">
+
+        <article class="des ">
+          <i class="iconfont circledown">&#xe62c;</i>
+          <h2>项目简示</h2>
+          
+          <section class="sec-flow">
+            <div class="flow-state">
+              <div>
+                <i class="flow-line"></i>
+                <i class="point-circle"></i>
+              </div>
+            </div>
+            长安基金网上交易平台：<a href="https://trade.changanfunds.com/etrading/" target="_blank">戳我</a><br>
+            <p class="tx-indent">
+              由三之乐提供前端设计与样式实现。<br>
+              项目设计包含各大交易流程（如申购、赎回、交易查询等）。<br>
+              使用html+css3+js。兼容所有主流浏览器。
+            </p>
+            <div id="imgArea1" class="full-img">
+              <ul >
+                <li data-src="img/changanweb_login.png"></li>
+              </ul>
+            </div>
+
+          </section>
+
+          <section class="sec-flow">
+            <div class="flow-state">
+              <div>
+                <i class="flow-line"></i>
+                <i class="point-circle"></i>
+              </div>
+            </div>
+            长安基金微理财(微信公众号)：<br>
+            <p class="tx-indent">
+              由三之乐提供前端设计与数据交互实现。<br>
+              项目基于微信平台，设计包含长安基金网上交易平台各大交易流程。<br>
+              使用html5+css3+js。实现仿原生ui交互；<br>
+              使用ajax进行数据交互。fis打包发布。<br>
+              使用sessionStorage和localStorage进行数据本地存储。
+            </p>
+            <div id="imgArea2" class="imageDiv">
+              <ul >
+                <li data-src="img/wxweb1.jpg"></li>
+                <li data-src="img/wxweb2.jpg"></li>
+              </ul>
+            </div>
+            
+
+            
+          </section>
+          
+        </article>
+        
+      </section>
+
+    </section>
+    
+  </section>
+
+  <section class="container">
+    <section class="page page-direct">
+      <section class="left">
+
+        <article class="des ">
+
+          <section class="sec-flow">
+            <div class="flow-state">
+              <div>
+                <i class="flow-line"></i>
+                
+              </div>
+            </div>
+            长安基金微理财(交易类页面)<br>
+            <p class="tx-indent">
+
+            </p>
+            <div id="imgArea3" class="imageDiv">
+              <ul >
+                <li data-src="img/wxweb-trade1.jpg"></li>
+                <li data-src="img/wxweb-trade2.jpg"></li>
+              </ul>
+            </div>
+
+            
+          </section>
+
+          <section class="sec-flow">
+            <div class="flow-state">
+              <div>
+                
+                <i class="point-circle"></i>
+              </div>
+            </div>
+            广发宣传H5页面<br>
+            <p class="tx-indent">
+              广发基金携手三之乐，定期设计用于活动推广宣传的h5页面。旨在利用移动端传播快速便捷的特点，采用适当动画介绍其活动详情以及产品的宣传。
+            </p>
+            <p class="tx-indent">
+              主要采用html5+css3动画实现。fis3进行后期打包发布。
+            </p>
+
+            <div id="imgArea4" class="imageDiv">
+              <ul >
+                <li data-src="img/gf-xsyl-qrcode.png" class="img-qr-code"></li>
+                <li data-src="img/gf-xsyl1.jpg"></li>
+                <li data-src="img/gf-xsyl2.jpg"></li>
+              </ul>
+            </div>
+
+            
+          </section>
+
+          
+        </article>
+
+        
+      </section>
+
+    </section>
+    
+  </section>
+
+
   <footer>
 
   </footer>

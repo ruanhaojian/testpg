@@ -11,6 +11,7 @@ html {
   font-family: "微软雅黑", "Microsoft YaHei", sans-serif;
   color: white;
   border-collapse: collapse;
+  background: gray;
 }
 h1 {
   font-size: 20px;
@@ -22,13 +23,20 @@ h2 {
   zoom: 1;
   overflow: hidden;
 }
-#container {
-  color: white;
-  -webkit-font-smoothing: none;
-  text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+.tx-indent {
+  text-indent: 2em;
+}
+.container {
+  color: #000000;
+  /*-webkit-font-smoothing: none;
+    text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);*/
   /*-moz-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
     -webkit-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
     animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;*/
+}
+ul,
+li {
+  list-style: none;
 }
 @-moz-keyframes blink {
   to {
@@ -45,35 +53,45 @@ h2 {
     background-color: #223332;
   }
 }
-#container {
+.loading-area {
+  font-size: 2em;
+  text-align: center;
+  margin: 300px 50px;
+  color: white;
+  -webkit-font-smoothing: none;
+  text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+  -moz-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+  -webkit-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+  animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+}
+.container {
   width: 632px;
   height: 872px;
   margin: 40px auto;
   padding: 44px;
-  background: #132e43;
-  background-color: #1d2b2a;
+  background-color: #ffffff;
 }
-#container .page {
+.container .page {
   background: gray;
 }
-#container .page .left {
+.container .page .left {
   float: left;
   width: 370px;
   zoom: 1;
   overflow: hidden;
 }
-#container .page .right {
+.container .page .right {
   float: left;
   /*padding-left: @left_width;*/
   width: 262px;
   zoom: 1;
   overflow: hidden;
 }
-#container .page .right .des {
+.container .page .right .des {
   margin-right: 0;
 }
-#container .page .left .face_img,
-#container .page .right .face_img {
+.container .page .left .face_img,
+.container .page .right .face_img {
   float: left;
   width: 165px;
   height: 165px;
@@ -81,126 +99,146 @@ h2 {
   border-radius: 50%;
   overflow: hidden;
   text-align: center;
-  background: #177FA6;
+  background-color: #177FA6;
   margin-right: 10px;
 }
-#container .page .left .face_img img,
-#container .page .right .face_img img {
+.container .page .left .face_img img,
+.container .page .right .face_img img {
   width: 124px;
 }
-#container .page .left .personalInfo,
-#container .page .right .personalInfo {
+.container .page .left .personalInfo,
+.container .page .right .personalInfo {
   font-size: 14px;
   padding-top: 30px;
   line-height: 28px;
   zoom: 1;
   overflow: hidden;
 }
-#container .page .left .pd-btm2,
-#container .page .right .pd-btm2 {
+.container .page .left .pd-btm2,
+.container .page .right .pd-btm2 {
   padding-bottom: 1em;
 }
-#container .page .left .h1,
-#container .page .right .h1 {
+.container .page .left .h1,
+.container .page .right .h1 {
   font-size: 20px;
 }
-#container .page .left .des,
-#container .page .right .des {
+.container .page .left .des,
+.container .page .right .des {
   margin: 4em 2.5em;
   position: relative;
   line-height: 1.8em;
 }
-#container .page .left .des h2,
-#container .page .right .des h2 {
+.container .page .left .des h2,
+.container .page .right .des h2 {
   position: relative;
 }
-#container .page .left .des p,
-#container .page .right .des p,
-#container .page .left .des span,
-#container .page .right .des span {
-  opacity: 0.5;
+.container .page .left .des p,
+.container .page .right .des p,
+.container .page .left .des span,
+.container .page .right .des span {
+  opacity: 0.9;
   line-height: 1.8em;
 }
-#container .page .left .des .circledown,
-#container .page .right .des .circledown {
+.container .page .left .des .circledown,
+.container .page .right .des .circledown {
   position: absolute;
   top: 0;
   left: -25px;
   font-size: 20px;
 }
-#container .page .left .des .sec-flow,
-#container .page .right .des .sec-flow {
+.container .page .left .des .sec-flow,
+.container .page .right .des .sec-flow {
   position: relative;
   padding-left: 25px;
   padding-bottom: 2em;
+  zoom: 1;
+  overflow: hidden;
 }
-#container .page .left .des .sec-flow p,
-#container .page .right .des .sec-flow p {
+.container .page .left .des .sec-flow p,
+.container .page .right .des .sec-flow p {
   line-height: 18px;
 }
-#container .page .left .des .sec-flow .flow-state,
-#container .page .right .des .sec-flow .flow-state {
+.container .page .left .des .sec-flow .flow-state,
+.container .page .right .des .sec-flow .flow-state {
   position: absolute;
   width: 18px;
   top: 0;
   left: 0;
   bottom: 0;
 }
-#container .page .left .des .sec-flow .flow-state > div,
-#container .page .right .des .sec-flow .flow-state > div {
+.container .page .left .des .sec-flow .flow-state > div,
+.container .page .right .des .sec-flow .flow-state > div {
   position: relative;
   width: 100%;
   height: 100%;
 }
-#container .page .left .des .sec-flow .flow-state .point-circle,
-#container .page .right .des .sec-flow .flow-state .point-circle {
+.container .page .left .des .sec-flow .flow-state .point-circle,
+.container .page .right .des .sec-flow .flow-state .point-circle {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 18px;
   height: 18px;
-  background: white;
+  background-color: #000000;
   border-radius: 50%;
 }
-#container .page .left .des .sec-flow .flow-state .flow-line,
-#container .page .right .des .sec-flow .flow-state .flow-line {
+.container .page .left .des .sec-flow .flow-state .flow-line,
+.container .page .right .des .sec-flow .flow-state .flow-line {
   display: block;
   margin: 0 auto;
   width: 2px;
   height: 100%;
-  background: white;
-  opacity: 0.7;
+  background-color: #000000;
+  opacity: 0.9;
 }
-#container .page .left .des .exp-title,
-#container .page .right .des .exp-title {
-  opacity: 0.7;
+.container .page .left .des .exp-title,
+.container .page .right .des .exp-title {
+  opacity: 0.9;
 }
-#container .page .left .des .icon-row,
-#container .page .right .des .icon-row {
+.container .page .left .des .icon-row,
+.container .page .right .des .icon-row {
   padding-left: 2em;
   position: relative;
 }
-#container .page .left .des .icon-row .location,
-#container .page .right .des .icon-row .location {
+.container .page .left .des .icon-row .location,
+.container .page .right .des .icon-row .location {
   position: absolute;
   top: 0;
   left: 0;
 }
-#container .page .left .des .sk-item span,
-#container .page .right .des .sk-item span {
+.container .page .left .des .sk-item span,
+.container .page .right .des .sk-item span {
   margin: 0 1em;
 }
-#container .page .left .contact_me,
-#container .page .right .contact_me {
+.container .page .left .contact_me,
+.container .page .right .contact_me {
   margin-top: 30px;
 }
-#container .page .left .contact_me p,
-#container .page .right .contact_me p {
+.container .page .left .contact_me p,
+.container .page .right .contact_me p {
   margin-top: 0.5em;
 }
-#container .page .right .des {
+.container .page .right .des {
   margin-right: 0;
+}
+.container .page .imageDiv img {
+  width: 30%;
+  margin-right: 2em;
+  margin-top: 1em;
+  float: left;
+}
+.container .page .imageDiv .img-qr-code img {
+  width: 100px;
+}
+.container .page .full-img img {
+  width: 100%;
+}
+.container .page.page-direct .left {
+  width: 100%;
+}
+.container .page.page-direct .right {
+  width: 0;
 }
 .typed-cursor {
   opacity: 1;

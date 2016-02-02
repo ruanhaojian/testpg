@@ -60,7 +60,7 @@ li {
 .loading-area {
   font-size: 2em;
   text-align: center;
-  margin: 250px 50px;
+  margin: 250px 25px;
   color: white;
   -webkit-font-smoothing: none;
   text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);

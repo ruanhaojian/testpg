@@ -1,3 +1,7 @@
+.iconfont,
+h2 {
+  color: #179fdd;
+}
 .padding_page {
   padding: 44px;
 }
@@ -56,7 +60,7 @@ li {
 .loading-area {
   font-size: 2em;
   text-align: center;
-  margin: 300px 50px;
+  margin: 250px 50px;
   color: white;
   -webkit-font-smoothing: none;
   text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
@@ -66,9 +70,11 @@ li {
 }
 .container {
   width: 632px;
-  height: 872px;
+  min-height: 872px;
   margin: 40px auto;
   padding: 44px;
+  zoom: 1;
+  overflow: hidden;
   background-color: #ffffff;
 }
 .container .page {
@@ -180,7 +186,7 @@ li {
   left: 0;
   width: 18px;
   height: 18px;
-  background-color: #000000;
+  background-color: #179fdd;
   border-radius: 50%;
 }
 .container .page .left .des .sec-flow .flow-state .flow-line,
@@ -189,7 +195,7 @@ li {
   margin: 0 auto;
   width: 2px;
   height: 100%;
-  background-color: #000000;
+  background-color: #179fdd;
   opacity: 0.9;
 }
 .container .page .left .des .exp-title,
@@ -224,7 +230,7 @@ li {
 }
 .container .page .imageDiv img {
   width: 30%;
-  margin-right: 2em;
+  margin-right: 1em;
   margin-top: 1em;
   float: left;
 }
